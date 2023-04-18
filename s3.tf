@@ -4,9 +4,9 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "luotech-terraform-aws-us-west-2"
-    key    = "tfbackend.tfstate"
-    region = "us-west-2"
+    # bucket = "luotech-terraform-aws-us-west-2"
+    # key    = "tfbackend.tfstate"
+    # region = "us-west-2"
   }
 }
 
