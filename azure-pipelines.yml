@@ -61,16 +61,14 @@ stages:
             provider: 'aws'
             command: 'plan'
             environmentServiceNameAWS: 'aws'
-
         - task: TerraformTaskV4@4
           displayName: apply
           inputs:
             provider: 'aws'
             command: 'apply'
             environmentServiceNameAWS: 'aws'
-        # - task: TerraformTaskV4@4
-        #   displayName: destroy
-        #   inputs:
-        #     provider: 'azurerm'
-        #     command: 'destroy'
-        #     environmentServiceNameAzureRM: 'azure'
+        - task: TerraformTaskV4@4
+          inputs:
+            provider: 'aws'
+            command: 'destroy'
+            environmentServiceNameAWS: 'aws'
