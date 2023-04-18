@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "test-s3-bucket-6785" {
-  bucket = "test-s3-bucket-6785"
+  bucket = "luotech-test-s3-bucket"
   tags = {
     Environment = "test"
   }
