@@ -31,7 +31,7 @@ stages:
             provider: 'aws'
             command: 'init'
             backendServiceAWS: 'aws'
-            backendAWSBucketName: 'luotech-terraform-aws-us-east-1'
+            backendAWSBucketName: 'luotech-terraform-aws-us-west-2'
             backendAWSKey: 'backend.tfstate'
         - task: TerraformTaskV4@4
           displayName: validate
@@ -54,7 +54,7 @@ stages:
             provider: 'aws'
             command: 'init'
             backendServiceAWS: 'aws'
-            backendAWSBucketName: 'luotech-terraform-aws-us-east-1'
+            backendAWSBucketName: 'luotech-terraform-aws-us-west-2'
             backendAWSKey: 'backend.tfstate'
         - task: TerraformTaskV4@4
           inputs:
